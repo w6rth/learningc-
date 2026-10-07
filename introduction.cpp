@@ -1,13 +1,12 @@
 #include <iostream>
 #include <string>
-#include <cmath>
 
 using namespace std;
 int main() {
-
     int so = 1;
     while (so >= 1){
         so = 0;
+
 cout << endl; 
 cout << "Welcome!" << endl;
 cout << "Choose which program you would like to enter: "<< endl;
