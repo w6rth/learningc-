@@ -30,7 +30,7 @@ switch (x){
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-            float add = (float) n1 + (float) n2;
+            float add =  n1 +  n2;
         cout << "The answer is: " << add << endl;
         cout << "Would you like to try again? Yes or No: ";
         cin >> ans;
@@ -51,7 +51,7 @@ switch (x){
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-            float sub = (float) n1 - (float) n2;
+            float sub =  n1 -  n2;
         cout << "The answer is: " << sub << endl;
 
         cout << "Would you like to try again? Yes or No: ";
@@ -73,7 +73,7 @@ switch (x){
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-            float mul = (float) n1 * (float) n2;
+            float mul =  n1 *  n2;
         cout << "The answer is: " << mul << endl;
         cout << "Would you like to try again? Yes or No: ";
         cin >> ans;
@@ -94,8 +94,8 @@ switch (x){
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-        if (n1 == 0 || n2 == 0){
-        cout << "The numbers cannot be undefined! Try again? Yes or No: " << endl;
+        if (n2 == 0){
+        cout << "The divisor cannot be undefined! Try again? Yes or No: " << endl;
         cin >> ans;
         if (ans == "yes" || ans == "Yes" || ans == "YES"){
             so = 1;
@@ -105,7 +105,7 @@ switch (x){
         }
         }
         else{
-        float div = (float) n1 / (float) n2;
+        float div =  n1 /  n2;
         cout << "The answer is: " << div << endl;
         cout << "Would you like to try again? Yes or No: ";
         cin >> ans;
