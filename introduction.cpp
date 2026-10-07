@@ -24,13 +24,13 @@ string ans;
 switch (x){ 
     case 'A':
     case 'a':{
-        int n1, n2;
+        float n1, n2;
         cout << "Addition: Choose two numbers" << endl;
         cout << "First number: ";
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-            int add = n1 + n2;
+            float add = (float) n1 + (float) n2;
         cout << "The answer is: " << add << endl;
         cout << "Would you like to try again? Yes or No: ";
         cin >> ans;
@@ -45,13 +45,13 @@ switch (x){
 
     case 'B':
     case 'b':{
-        int n1, n2;
+        float n1, n2;
         cout << "Subtraction: Choose two numbers" << endl;
         cout << "First number: ";
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-            int sub = n1 - n2;
+            float sub = (float) n1 - (float) n2;
         cout << "The answer is: " << sub << endl;
 
         cout << "Would you like to try again? Yes or No: ";
@@ -67,13 +67,13 @@ switch (x){
 
     case 'C':
     case 'c':{
-        int n1, n2;
+        float n1, n2;
         cout << "Multiplication: Choose two numbers" << endl;
         cout << "First number: ";
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-            int mul = n1 * n2;
+            float mul = (float) n1 * (float) n2;
         cout << "The answer is: " << mul << endl;
         cout << "Would you like to try again? Yes or No: ";
         cin >> ans;
@@ -88,21 +88,33 @@ switch (x){
 
     case 'D':
     case 'd':{
-        int n1, n2;
+        float n1, n2;
         cout << "Division: Choose two numbers" << endl;
         cout << "First number: ";
             cin >> n1;
         cout << "Second number: ";
             cin >> n2;
-        float div = (float) n1 / (float) n2;
-        cout << "The answer is: " << div << endl;
-       cout << "Would you like to try again? Yes or No: ";
+        if (n1 == 0 || n2 == 0){
+        cout << "The numbers cannot be undefined! Try again? Yes or No: " << endl;
         cin >> ans;
         if (ans == "yes" || ans == "Yes" || ans == "YES"){
             so = 1;
         }
         else if (ans == "no" || ans == "No" || ans == "NO"){
             so = 0;
+        }
+        }
+        else{
+        float div = (float) n1 / (float) n2;
+        cout << "The answer is: " << div << endl;
+        cout << "Would you like to try again? Yes or No: ";
+        cin >> ans;
+        if (ans == "yes" || ans == "Yes" || ans == "YES"){
+            so = 1;
+        }
+        else if (ans == "no" || ans == "No" || ans == "NO"){
+            so = 0;
+        }
         }
     break;
     }
